@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cabin-table {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+.cabin-table th, .cabin-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.cabin-table th {
+    background-color: #f2f2f2;
+    height: 30px;
+}
+
+.cabin-table td {
+    height: 150px;
+    vertical-align: middle;
+}
+
+.cabin-table img {
+    max-height: 140px;
+    max-width: 100%;
+}

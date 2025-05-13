@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление каюты</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h2>Оформление каюты</h2>
+<table class="cabin-table">
+    <tr>
+        <th>Цвет стен</th>
+        <th>Эмблема</th>
+    </tr>
+    <tr>
+        <td style="background-color: {{ wall_color }};"></td>
+        <td><img src="{{ url_for('static', filename=marsian_img) }}" alt="Марсианин"></td>
+    </tr>
+</table>
+</body>
+</html>
