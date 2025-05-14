@@ -8,13 +8,13 @@ def index():
     return render_template('base.html')
 
 
-@app.route('/table_param/<gender>/<int:age>')
+@app.route('/table/<gender>/<int:age>')
 def table_param(gender, age):
     wall_color = '#FFC0CB' if gender.lower() == 'female' else '#87CEEB'
 
     marsian_img = 'child_marsian.png' if age < 21 else 'adult_marsian.png'
 
-    return render_template('table_param.html',
+    return render_template('table.html',
                            wall_color=wall_color,
                            marsian_img=marsian_img,
                            gender=gender,
